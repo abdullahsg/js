@@ -37,3 +37,13 @@ String.prototype.contains = function(pattern, isCaseSensitive) {
 	else
 		return true;
 };
+
+String.prototype.replaceAll = function(oldString, newString, isCaseSensitive) {
+	var regExp = null;
+	if (isCaseSensitive) {
+		regExp = new RegExp(oldString, "g");
+	} else {
+		regExp = new RegExp(oldString, "gi");
+	}
+	return this.replace(regExp, newString);
+};
