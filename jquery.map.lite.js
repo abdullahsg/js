@@ -1,7 +1,7 @@
 /**
 * Created by Shihab 2012
 *
-* Version: 1
+* Version: 1.1
 * Requires: jQuery 1.4+
 *
 */
@@ -78,6 +78,24 @@
 						alert("Geocode was not successful for the following reason: " + status);
 					}
 				});
+			});
+		}
+	});
+})(jQuery);
+
+
+
+;(function (j) {
+	j(function () {
+		var map = j('[data-id=map]');
+		if (map.length > 0) {
+			var streetView = map.data("streeViewEnabled");
+			map.drawMap({
+				address: map.data("address"),
+				streetViewControl: map.data("street-view-enabled"),
+				markerContent: map.data("marker-content"),
+				mapType: map.data("map-type"),
+				zoom: map.data("zoom")
 			});
 		}
 	});
