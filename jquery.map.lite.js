@@ -14,7 +14,7 @@
 
 
 
-/* <!-- SAMPLE HTML MARKUP DRAWING MAP -->
+/* <!-- SAMPLE HTML MARKUP FOR DRAWING MAP -->
 
 <div
 	data-id="map"
