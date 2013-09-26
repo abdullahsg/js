@@ -14,6 +14,21 @@
 
 
 
+/* <!-- SAMPLE HTML MARKUP DRAWING MAP -->
+
+<div
+	data-id="map"
+	data-address="Dhaka"
+	data-street-view-enabled="false"
+	data-marker-content="marker content"
+	data-map-type="roadmap"
+	data-zoom="14">
+</div>
+
+*/
+
+
+
 ;(function ($) {
 
 	document.write('<' + 'script src="http://maps.google.com/maps/api/js?sensor=true"' +
